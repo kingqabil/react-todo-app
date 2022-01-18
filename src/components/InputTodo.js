@@ -6,14 +6,14 @@ class InputTodo extends Component {
   };
 
   onChange = (e) => {
-	@@ -16,23 +16,24 @@ class InputTodo extends Component {
     if (this.state.title.trim()) {
       this.props.addTodoProps(this.state.title);
       this.setState({
         title: '',
       });
+      } else {
+      alert('Please write item');
     }
-    alert('Please write item');
   };
 
   render() {
