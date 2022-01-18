@@ -1,31 +1,31 @@
-import React from "react";
-import TodosList from "./TodosList";
-import Header from "./Header";
-import "./TodoContainer.css";
-import InputTodo from "./InputTodo";
-import { v4 as uuidv4 } from "uuid";
+import React from 'react';
+import TodosList from './TodosList';
+import Header from './Header';
+import './TodoContainer.css';
+import InputTodo from './InputTodo';
+import { v4 as uuidv4 } from 'uuid'
 
 class TodoContainer extends React.Component {
   state = {
     todos: [
       {
         id: uuidv4(),
-        title: "Setup development environment",
+        title: 'Setup development environment',
         completed: true,
       },
       {
         id: uuidv4(),
-        title: "Develop website and add content",
+        title: 'Develop website and add content',
         completed: false,
       },
       {
         id: uuidv4(),
-        title: "Check linter errors and fix them",
+        title: 'Check linter errors and fix them',
         completed: false,
       },
       {
         id: uuidv4(),
-        title: "Deploy to live server",
+        title: 'Deploy to live server',
         completed: false,
       },
     ],
