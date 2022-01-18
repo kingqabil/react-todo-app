@@ -19,8 +19,8 @@ class TodoItem extends React.Component {
   };
 
   render() {
-    let viewMode = {};
-    let editMode = {};
+    const viewMode = {};
+    const editMode = {};
 
     if (this.state.editing) {
       viewMode.display = 'none';
@@ -48,7 +48,8 @@ class TodoItem extends React.Component {
             className={styles.checkbox}
             checked={completed}
             onChange={() => this.props.handleChangeProps(id)}
-          />{' '}
+          />
+          {' '}
           <button onClick={() => this.props.delTodoProps(id)}>Delete</button>
           <span style={completed ? completedStyle : null}>{title}</span>
         </div>

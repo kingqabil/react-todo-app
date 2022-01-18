@@ -6,12 +6,19 @@ class InputTodo extends Component {
   };
 
   onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
     if (this.state.title.trim()) {
       this.props.addTodoProps(this.state.title);
       this.setState({
         title: '',
       });
-      } else {
+    } else {
       alert('Please write item');
     }
   };
@@ -31,3 +38,6 @@ class InputTodo extends Component {
       </form>
     );
   }
+}
+
+export default InputTodo;
