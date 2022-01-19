@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// component file
+//component file
 import TodoContainer from './components/TodoContainer';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -11,11 +11,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route exact path="/" element={<TodoContainer />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotMatch />} />
+        <Route exact path="/" element={<TodoContainer />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="*" element={<NotMatch />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
