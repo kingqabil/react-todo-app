@@ -13,6 +13,7 @@
 - HTML
 - CSS
 - JAVASCRIPT
+- REACT
 - WEBPACK
 
 ## Getting started
